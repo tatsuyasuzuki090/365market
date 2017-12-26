@@ -1,0 +1,15 @@
+■アクティビティページ
+（チーム追加などされた場合に自動で通知される機能の表示ページ）
+http://recoro.net/sample/user_activity.php
+http://recoro.net/sample/user_activity_detail.php?id=47
+
+■ニュース（お知らせ）ページ
+http://recoro.net/sample/user_news.php
+http://recoro.net/sample/user_news_detail.php?id=48
+
+■ログイン後の右上のアイコン部分
+・通知数のカウント機能
+・閲覧済みで数減少
+・0になったら非表示
+・クリックしたら吹き出しで項目表示
+http://recoro.net/sample/index.php
