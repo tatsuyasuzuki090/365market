@@ -45,10 +45,7 @@ if(isset($_POST['project'])) {
 		
 		} else {
 			$up_img = resizeImage($_FILES["img"],(int)$_POST["width"],'','1200','900');
-
-
 		}
-	
 	$query_project_in = "INSERT INTO project (no, project_no, title, project_datetime, description, project_address, main_img_path, status, category, datetime) VALUES ('$no', '$project_no', '$project_title', '$project_datetime', '$project_description', '$project_address', '$up_img', 3, 1, '$datetime_now')";
 	$result_project_in = $mysqli->query($query_project_in);
 	if (!$result_project_in) {
