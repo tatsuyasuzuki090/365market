@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Swiper サンプル03</title>
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="./css/highlight.js.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sample.css">
+  <link rel="stylesheet" href="./css/sample03.css">
+
+  <script src="./js/highlight.js"></script>
+  <script src="./js/highlightjs-line-numbers.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</head>
+<body>
+<div class="l-wrapper">
+  <header class="l-header">
+    <div class="l-header-inner c-container">
+      <div class="l-header-logo">Swiper サンプル03</div>
+    </div><!-- .l-header-inner -->
+  </header><!-- .l-header -->
+
+  <div class="c-container">
+    <div class="sample sample03">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/img01.png"></div>
+          <div class="swiper-slide"><img src="./img/img02.png"></div>
+          <div class="swiper-slide"><img src="./img/img03.png"></div>
+        </div>
+          
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div><!-- .sample -->
+
+    <p>HTML</p>
+<pre class="html"><code>
+&lt;div class=&quot;sample sample03&quot;&gt;
+  &lt;div class=&quot;swiper-container&quot;&gt;
+    &lt;div class=&quot;swiper-wrapper&quot;&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./img/img01.png&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./img/img02.png&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;./img/img03.png&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+      
+    &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <p>CSS</p>
+<pre class="css"><code>
+.swiper-slide {
+  cursor: pointer;
+}
+
+.sample03 .swiper-button-prev,
+.sample03 .swiper-button-next {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sample03 .swiper-button-prev,
+  .sample03 .swiper-button-next {
+    display: block;
+  }
+}
+</code></pre>
+
+    <p>JavaScript</p>
+<pre class="js"><code>
+window.addEventListener('DOMContentLoaded', function() {
+  var swiper03 = new Swiper('.sample03 .swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 3,
+    loopedSlides: 3,
+    centeredSlides : true,
+    slideToClickedSlide: true,
+    spaceBetween: 10,
+    breakpoints: {
+      543: {
+        slidesPerView: 2,
+      }
+    }
+  });
+}, false);
+</code></pre>
+  </div><!-- .c-container -->
+</div><!-- .l-wrapper -->
+</body>
+</html>

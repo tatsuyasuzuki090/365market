@@ -1,0 +1,12 @@
+768未満は範囲外に記載
+@media ( min-width : 768px) {
+
+}
+ 
+@media ( min-width : 992px) {
+
+}
+ 
+@media ( min-width : 1200px) {
+
+}
