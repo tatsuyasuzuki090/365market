@@ -23,7 +23,6 @@ if( isset($_SESSION['user']) != "") {
 	$img_path = $row['img_path'];
 	$img_sub_prof_path = $row['img_sub_prof_path'];
 }
-
 // データベースの切断
 $result->close();
 
