@@ -25,7 +25,6 @@ if( isset($_SESSION['user']) != "") {
 }
 // データベースの切断
 $result->close();
-
 if(isset($_POST['project'])) {
 	$project_title = $_POST['project_title'];
 	$project_description = $_POST['project_description'];
